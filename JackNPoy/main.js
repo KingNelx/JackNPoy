@@ -9,6 +9,7 @@ choices.forEach(picks => picks.addEventListener('click', (e) => {
     choiceByUser = e.target.id
     userChoice.textContent = choiceByUser
     generateComputerChoice()
+    checkWhoWins()
 }))
 
 
@@ -24,4 +25,31 @@ function generateComputerChoice(){
         computerChoices = 'scissors'
     }
     computerChoice.textContent = computerChoices
+}
+
+function checkWhoWins(){
+    if(choiceByUser == computerChoices){
+        result.textContent = 'It\'s a tie'
+    }
+    else if(choiceByUser == 'rock'){
+        if(computerChoices == 'paper'){
+            result.textContent = 'You lose'
+        }else{
+            result.textContent = 'You win'
+        }
+    }
+    else if(choiceByUser == 'paper'){
+        if(computerChoices == 'scissors'){
+            result.textContent = 'You lose'
+        }else{
+            result.textContent = 'You win'
+        }
+    }
+    else if(choiceByUser == 'scissors'){
+        if(computerChoices == 'rock'){
+            result.textContent = 'You lose'
+        }else{
+            result.textContent = 'You win'
+        }
+    }
 }
