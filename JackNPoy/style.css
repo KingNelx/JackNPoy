@@ -10,7 +10,12 @@ p{
     font-family: Verdana, Tahoma, sans-serif;
     text-decoration: underline;
 }
+
+h2{
+    text-align: center;
+}
 .flex-container{
+    background-color: #f1f1f1;
     border: 2px solid black;
     border-radius: 50px;
     width: 50%;
@@ -31,4 +36,9 @@ button{
     cursor: pointer;
     margin-bottom: 10px;
     background-color:aqua;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: greenyellow;
 }
