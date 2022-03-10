@@ -1,2 +1,1 @@
-# WebDevelopment
-7 JavaScript  Games 
+# 30Days of JavaScript
