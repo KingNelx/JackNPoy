@@ -1,4 +1,4 @@
 # 30Days of JavaScript
 
-#Day1: Conditional Statement and Loopings \n
+#Day1: Conditional Statement and Loopings <br>
 https://github.com/KingNelx/30Days-of-JavaScript-/blob/master/30DaysOfJavaScript/Day1.js
