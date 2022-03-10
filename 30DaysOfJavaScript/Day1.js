@@ -37,4 +37,12 @@ if(Age1 >= 21)
 let babyAge = 2
 let teenAge = 18
 let matureAge = 21
-let personAge
+let personAge = 21
+
+if(personAge == matureAge){
+    console.log(" Mature Age ")
+}else if(personAge === teenAge){
+    console.log(" Teen Age")
+}else{
+    console.log("babyAge")
+}
