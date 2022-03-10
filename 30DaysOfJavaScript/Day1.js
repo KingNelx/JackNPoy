@@ -51,7 +51,12 @@ if(personAge === matureAge){
 /* nested if else statements */
 
 let isDogAlive = true
+let isDogHappy = true
 
 if(isDogAlive){
-    console.log("Dog Alive")
+  if(isDogHappy)
+        console.log(" Dog is Alive and Happy ")
+}
+else{
+    console.log(" Dog is not alive nor happy ")
 }
