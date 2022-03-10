@@ -2,11 +2,20 @@
 
 // There are 2 ways of declaring arrays
 
-let myArray = new Array();
-
+let myArray = new Array()
 let emptyArray = []
 
-// pushin elements in the array
+// looping in every element in the arrays 
+
+let exTraArray = ["Jonel", "Pogi", "Talaga", "Sobra"]
+for(let index = 0; index < exTraArray.length; index++){
+    console.log(exTraArray[index])
+}
+
+
+
+// pushing elements in the array
+// using push method 
 
 let thisEmptyArray = new Array();
 thisEmptyArray.push("Jonel")
