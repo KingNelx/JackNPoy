@@ -39,10 +39,19 @@ let teenAge = 18
 let matureAge = 21
 let personAge = 21
 
-if(personAge == matureAge){
+if(personAge === matureAge){
     console.log(" Mature Age ")
 }else if(personAge === teenAge){
     console.log(" Teen Age")
 }else{
     console.log("babyAge")
+}
+
+
+/* nested if else statements */
+
+let isDogAlive = true
+
+if(isDogAlive){
+    console.log("Dog Alive")
 }
