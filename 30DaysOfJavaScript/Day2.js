@@ -41,3 +41,13 @@ console.log(thisNewArray)
 // shift method to remove elements into the first index
 thisNewArray.shift()
 console.log(thisNewArray)
+
+// we can access each element of the array using thier indexes
+
+let fakeArray = ["Jonel", "Tapia", "KingNelx"]
+console.log(fakeArray[2])
+
+
+for(let key in fakeArray) {
+    console.log(fakeArray[key])
+}
