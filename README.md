@@ -6,4 +6,4 @@ https://github.com/KingNelx/30Days-of-JavaScript-/blob/master/30DaysOfJavaScript
 #Day2: Arrays <br>
 https://github.com/KingNelx/30Days-of-JavaScript-/blob/master/30DaysOfJavaScript/Day2.js
 
-#Day2: Objects <br>
+#Day3: Objects <br>
