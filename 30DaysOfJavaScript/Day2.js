@@ -24,3 +24,7 @@ thisEmptyArray.push("Talaga")
 
 console.log(thisEmptyArray)
 
+
+
+thisEmptyArray.pop()
+console.log(thisEmptyArray)
