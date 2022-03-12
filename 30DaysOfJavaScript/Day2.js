@@ -30,3 +30,14 @@ console.log(thisEmptyArray)
 // pop method to remove elements into last index
 thisEmptyArray.pop()
 console.log(thisEmptyArray)
+
+// unshift method to insert elements into the first index
+let thisNewArray = ["Sniper", "Phantom"];
+thisNewArray.unshift("Jonel")
+thisNewArray.unshift("Tapia")
+thisNewArray.unshift("Invoking")
+console.log(thisNewArray)
+
+// shift method to remove elements into the first index
+thisNewArray.shift()
+console.log(thisNewArray)
