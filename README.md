@@ -7,3 +7,4 @@ https://github.com/KingNelx/30Days-of-JavaScript-/blob/master/30DaysOfJavaScript
 https://github.com/KingNelx/30Days-of-JavaScript-/blob/master/30DaysOfJavaScript/Day2.js
 
 #Day3: Objects <br>
+https://github.com/KingNelx/30Days-of-JavaScript-/blob/master/30DaysOfJavaScript/Day3.js
