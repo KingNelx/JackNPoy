@@ -19,7 +19,7 @@ for(let index = 0; index < exTraArray.length; index++){
 */
 // pushing elements in the array
 // using Stack method 
-
+// push method to insert elements into last index
 let thisEmptyArray = new Array();
 thisEmptyArray.push("Jonel")
 thisEmptyArray.push("Pogi")
@@ -27,6 +27,6 @@ thisEmptyArray.push("Talaga")
 
 console.log(thisEmptyArray)
 
-
+// pop method to remove elements into last index
 thisEmptyArray.pop()
 console.log(thisEmptyArray)
