@@ -13,9 +13,12 @@ for(let index = 0; index < exTraArray.length; index++){
 }
 
 
-
+/*
+    We will use Stack to insert and remove an elements from the last index of array
+    We will shift and unshift method to to insert and remove an elements from the first index of array
+*/
 // pushing elements in the array
-// using push method 
+// using Stack method 
 
 let thisEmptyArray = new Array();
 thisEmptyArray.push("Jonel")
@@ -23,7 +26,6 @@ thisEmptyArray.push("Pogi")
 thisEmptyArray.push("Talaga")
 
 console.log(thisEmptyArray)
-
 
 
 thisEmptyArray.pop()
