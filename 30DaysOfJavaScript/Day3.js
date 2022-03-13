@@ -103,9 +103,9 @@ const Asus = {
     Type: "Laptop",
     Ram: "12GB",
     Driver: "Amd 12",
-    isGood: true,
+    isGood: false,
     printInfo: function information(){
-        // console.log(`Asus Laptop owner is: ${this.Owner}. He is only ${this.OwnerAge}`)
+        console.log(`Asus Laptop owner is: ${this.Owner}. He is only ${this.OwnerAge}`)
     }
 }
 
@@ -116,3 +116,47 @@ myLaptop.OwnerAge = 21,
 myLaptop.Dream = "Software Engineer"
 
 myLaptop.printInfo()
+if(Asus.isGood){
+    console.log(" Yeah He is Good")
+}else{
+    console.log(" He is not good")
+}
+
+
+const myDog = {
+    Name: "Monay",
+    isHeGood: true,
+    Age: 2,
+    isDogCute: true
+}
+
+console.log(myDog)
+
+// We override the existing properties of the myDog Object
+const myOtherDog = Object.assign(myDog, {
+    Name: "Blacky",
+    Age: 5
+})
+
+console.log(myOtherDog)
+
+
+/* 
+    We also can use Object.assign to replace for..in loop for simple cloning:
+*/
+
+const Monay = {
+    isDogFat: true,
+    isDogHealthy: true,
+    Age: 2
+}
+
+// object assign to clone
+
+const copyMonay = Object.assign({}, Monay)
+console.log(copyMonay)
+
+// for in loop to clone
+for(let key in Monay){
+    copyMonay[key] = Monay[key]
+}
