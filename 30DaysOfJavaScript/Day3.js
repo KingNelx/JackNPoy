@@ -233,7 +233,10 @@ userShoppingCart.Login = () =>{
     `)
 }
 
+userShoppingCart.Logout = () =>{
+    console.log(`Thank you for Shopping ${userShoppingCart.Name}`)
+}
 userShoppingCart.Login()
+userShoppingCart.Logout()
 
-// Method shorthand
 
