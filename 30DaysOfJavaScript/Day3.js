@@ -187,8 +187,8 @@ for(let key in myDream){
 }
 console.log(myDreamCopy)
 
-// its good to declare aan object using const , because it can be modified
-
+// its good to declare an object using const , because it can be modified
+//  it must always reference the same object, but properties of that object are free to change.
 const sample = {
     Age: 21,
 }
