@@ -186,3 +186,12 @@ for(let key in myDream){
     myDreamCopy[key] = myDream[key]
 }
 console.log(myDreamCopy)
+
+// its good to declare aan object using const , because it can be modified
+
+const sample = {
+    Age: 21,
+}
+
+sample.Age = 22
+console.log(sample.Age)
