@@ -16,7 +16,7 @@ const employee = {
 // employee.Favorite Game == error
 // employee["First Game"] == success
 
-for(let key in employee){
+for (let key in employee) {
     console.log(employee[key])
 }
 
@@ -42,7 +42,7 @@ const copyPlayer = playerInfo
 
 console.log(copyPlayer)
 
-const original  = {}
+const original = {}
 
 const copy = original
 
@@ -64,7 +64,7 @@ console.log(User)
 
 let cloneUser = {} // new empty object\
 
-for(let key in User){
+for (let key in User) {
     cloneUser[key] = User[key]
 }
 cloneUser.isHeGivingUp = true
@@ -104,7 +104,7 @@ const Asus = {
     Ram: "12GB",
     Driver: "Amd 12",
     isGood: false,
-    printInfo: function information(){
+    printInfo: function information() {
         console.log(`Asus Laptop owner is: ${this.Owner}. He is only ${this.OwnerAge}`)
     }
 }
@@ -113,12 +113,12 @@ const myLaptop = Object.create(Asus)
 
 myLaptop.Owner = "Jonel Tapia"
 myLaptop.OwnerAge = 21,
-myLaptop.Dream = "Software Engineer"
+    myLaptop.Dream = "Software Engineer"
 
 myLaptop.printInfo()
-if(Asus.isGood){
+if (Asus.isGood) {
     console.log(" Yeah He is Good")
-}else{
+} else {
     console.log(" He is not good")
 }
 
@@ -157,6 +157,32 @@ const copyMonay = Object.assign({}, Monay)
 console.log(copyMonay)
 
 // for in loop to clone
-for(let key in Monay){
+for (let key in Monay) {
     copyMonay[key] = Monay[key]
 }
+
+// nested cloning 
+
+const myDream = {
+    Dream: "Software Engineer",
+    isStudent: true,
+    ProgrammingLanguages: {
+        frontEnd: "HTML CSS JavaScript",
+        backEnd: "Java PHP",
+        framework: "Laravel, Spring Boot, VueJs, ReactJs"
+    }
+}
+
+// we are assigning the properties of the myDream object to myDreamCopy object
+// this means that both of them are Referencing the same property
+
+// const myDreamCopy = Object.assign({}, myDream)
+
+// const myDreamCopy = myDream
+
+const myDreamCopy = {}
+
+for(let key in myDream){
+    myDreamCopy[key] = myDream[key]
+}
+console.log(myDreamCopy)
