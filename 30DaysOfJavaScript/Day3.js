@@ -195,3 +195,45 @@ const sample = {
 
 sample.Age = 22
 console.log(sample.Age)
+
+/*
+Objects are usually created to represent entities of the real world, like users, orders and so on
+And, in the real world, a user can act: select something from the shopping cart, login, logout etc.
+Actions are represented in JavaScript by functions in properties.
+ */
+
+
+/* 
+    sample program on how to play with Objects
+    Mini shopping cart view
+*/
+
+function makeid(length) {
+    let result           = '';
+    let characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let charactersLength = characters.length;
+    for ( let i = 0; i < length; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * 
+ charactersLength));
+   }
+   return result;
+}
+
+const userShoppingCart = {
+    hasMoney: true,
+    Name: "Jonel",
+    email: "Jonel@gmail.com",
+    password: makeid(5)
+}
+
+userShoppingCart.Login = () =>{
+    console.log(`Welcome ${userShoppingCart.Name}
+    Email: ${userShoppingCart.email}
+    Password: ${userShoppingCart.password}
+    `)
+}
+
+userShoppingCart.Login()
+
+// Method shorthand
+
